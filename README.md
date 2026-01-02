@@ -1,81 +1,152 @@
-📊 Análise de Vendas em Excel — Superstore Dataset
-🎯 Objetivo
+📊 Análise de Vendas, Lucro e Ticket Médio — Superstore Dataset (Excel)
 
-Este projeto tem como objetivo analisar o desempenho de vendas, a lucratividade e o comportamento dos clientes utilizando o dataset Superstore. A análise busca identificar tendências, padrões de sazonalidade, concentração de receita e oportunidades para apoiar a tomada de decisão do negócio.
+Este projeto apresenta uma análise exploratória e descritiva de dados de vendas de uma superloja fictícia localizada nos Estados Unidos, utilizando Excel (WPS 2019) e dados públicos conhecidos como Superstore Dataset (originalmente disponibilizado pela Tableau e amplamente utilizado para fins educacionais).
 
-🗂️ Conjunto de Dados
+O objetivo do projeto é demonstrar habilidades práticas de análise de dados orientada a negócio, explorando métricas como faturamento, lucro, ticket médio, margem e concentração de resultados, além de comunicar insights de forma clara e objetiva.
 
-Dataset público de caráter educacional, originalmente disponibilizado pela Tableau e posteriormente divulgado na plataforma Kaggle.
-Os dados representam uma superloja fictícia localizada nos Estados Unidos, com transações anonimizadas registradas em diversas cidades e estados.
+🗂️ Sobre os dados
 
-🧰 Ferramentas Utilizadas
+Dataset público e anonimizado (uso educacional)
 
-Excel (WPS 2019)
+Dados de vendas de uma superloja nos EUA
+
+Principais campos analisados:
+
+Receita (Sales)
+
+Lucro (Profit)
+
+Pedido (Order ID)
+
+Subcategoria de produto
+
+Datas (ano e mês)
+
+Localização (estado / cidade)
+
+Segmentos de clientes
+
+![Exploração dos Dados](images/shot-part1.png)
+
+🛠️ Ferramentas utilizadas
+
+Excel / WPS Office 2019
 
 Tabelas Dinâmicas (Pivot Tables)
 
-Agregações e cálculos básicos
+Fórmulas e métricas calculadas
 
-🔍 Visão Geral da Análise
+Visualizações gráficas simples
 
-![Data Overview](images/shot-part1.png)
+Análise orientada a KPIs
 
-1. Exploração dos Dados
+📈 Visão Geral e KPIs
 
-Foi realizada uma exploração inicial dos dados por meio de tabelas dinâmicas para compreender a estrutura do dataset, incluindo:
+A análise parte de uma visão consolidada dos principais indicadores do negócio:
 
-Receita e lucro
+Receita Total: US$ 2.297.200
 
-Clientes e produtos
+Lucro Total: US$ 286.397
 
-Distribuição geográfica
+Número Total de Pedidos: 9.994
 
-Informações de pedidos e envio
+Ticket Médio Geral: ~US$ 230
 
-Segmentos B2B e B2C
+Margem Global: ~12,5%
 
-2. Tendência de Receita e Lucro
-   
-![Data Overview](images/shot-part2.png)
+Esses KPIs permitem uma leitura rápida da performance geral antes de aprofundar nas análises detalhadas.
 
-Observa-se um crescimento consistente da receita nos anos de 2016 e 2017 em comparação com 2014 e 2015.
+⏳ Análise Temporal
 
-Apesar de uma leve queda no faturamento em 2015, o lucro apresentou um aumento aproximado de 24%, resultando em uma melhoria de margem de 10% (2014) para 13% (2015).
+Foi realizada uma análise da evolução da receita ao longo do tempo, observando o comportamento anual e mensal das vendas.
 
-Esse comportamento sugere maior eficiência operacional ou ajustes positivos em preços e custos no período.
+Principais observações:
 
-3. Análise de Sazonalidade
+Crescimento consistente da receita nos anos mais recentes do dataset.
 
-Foram identificados padrões claros de sazonalidade nas vendas:
+Presença de sazonalidade, com queda de faturamento nos primeiros meses do ano.
 
-Queda significativa nos meses de janeiro e fevereiro
+Picos recorrentes de vendas nos últimos meses, especialmente no quarto trimestre.
 
-Desempenho elevado nos meses de setembro, novembro e dezembro
+Essa análise ajuda a entender padrões de consumo e possíveis impactos de sazonalidade no resultado do negócio.
 
-Novembro se destaca como o mês de maior faturamento médio
+![Análise Temporal](images/shot-part2.png)
 
-4. Comportamento de Compra ao Longo do Mês
+📊 Análise de Mix de Produtos, Ticket Médio e Margem
 
-Uma análise exploratória por dia do mês indica maior volume de compras nos últimos 10 dias do mês.
+Para aprofundar a análise, foi construída uma tabela consolidada por Subcategoria de Produto, contendo:
 
-Embora alguns dias (29, 30 e 31) apareçam com menor frequência devido à variação do calendário, o padrão geral mostra uma concentração maior de compras no final do mês quando comparado aos primeiros dias.
+Número de pedidos
 
-💡 Principais Insights
+Receita total
 
-As vendas apresentam forte sazonalidade, com maior concentração no último trimestre do ano.
+Lucro total
 
-A lucratividade nem sempre acompanha o crescimento da receita, reforçando a importância da análise de margem.
+Ticket médio de faturamento
 
-O comportamento de compra dos clientes sugere possível influência de ciclos de pagamento ou faturamento.
+Lucro médio por pedido
 
-📌 Recomendações de Negócio
+Margem (%)
 
-Planejar estoques e ações de marketing considerando o aumento de demanda no último trimestre do ano.
+A tabela dinâmica foi convertida em valores estáticos para permitir ordenações consistentes e análises comparativas entre ticket médio, lucro e margem.
 
-Investigar as estratégias de custo e precificação aplicadas em 2015 para replicar a melhoria de margem em outros períodos.
+Principais insights:
 
-Avaliar campanhas promocionais direcionadas para o final do mês, período em que a intenção de compra se mostra mais elevada.
+Algumas subcategorias apresentam ticket médio elevado, mas margem negativa, indicando possíveis problemas de custo ou precificação (ex.: Tables, Supplies).
 
-⚠️ Aviso
+Produtos com menor volume, porém ticket médio alto e margens positivas (ex.: Copiers), indicam um perfil de produto premium saudável.
 
-Este projeto foi desenvolvido exclusivamente para fins educacionais. Os dados utilizados não representam operações comerciais reais.
+Subcategorias de alto volume e margem moderada (ex.: Binders, Phones) sustentam grande parte da receita total.
+
+📌 Essa análise evidencia que alto faturamento não significa necessariamente bom resultado financeiro.
+
+📉 Análise de Margem
+
+A visualização de margem por subcategoria reforça a importância de analisar qualidade da receita, e não apenas volume.
+
+Margens negativas indicam riscos operacionais.
+
+Margens elevadas em produtos de baixo volume podem representar oportunidades de crescimento estratégico.
+
+![Análise de Margem e Ticket Medio](images/shot-part3-1.png)
+
+📉 Análise de Concentração de Resultados (Pareto 80/20)
+
+Foi realizada uma análise de Pareto para avaliar a concentração de faturamento e lucro por cidade, com o objetivo de identificar o grau de dependência do negócio em relação a poucos mercados.
+
+A análise mostrou que:
+
+Apenas 16 cidades (3,01% do total) concentram aproximadamente 78,45% do lucro total.
+
+86 cidades (16,20% do total) são responsáveis por cerca de 79,00% do faturamento total.
+
+O total analisado contempla 531 cidades, evidenciando uma forte assimetria na distribuição dos resultados.
+
+Esses dados indicam que o lucro do negócio é ainda mais concentrado do que o faturamento, sugerindo que uma parcela muito reduzida das cidades não apenas gera maior volume de vendas, mas também apresenta melhor eficiência operacional e rentabilidade.
+
+📌 Insight-chave:
+Embora o faturamento esteja relativamente distribuído entre um número maior de cidades, a geração de lucro depende fortemente de poucos mercados específicos. Isso sugere oportunidades estratégicas de foco, como:
+
+priorização de cidades altamente rentáveis,
+
+revisão de custos e margens em cidades com alto faturamento e baixa rentabilidade,
+
+mitigação de riscos operacionais associados à concentração excessiva de lucro.
+
+![Análise de Pareto](images/shot-part3-2.png)
+
+🧠 Principais Conclusões
+
+O negócio apresenta forte concentração de receita e lucro em poucas subcategorias.
+
+Ticket médio elevado não garante rentabilidade se a margem for negativa.
+
+A análise integrada de volume, ticket médio, lucro e margem fornece uma visão mais madura da performance do negócio.
+
+A abordagem adotada permite apoiar decisões relacionadas a precificação, mix de produtos e foco operacional.
+
+⚠️ Observações finais
+
+Este projeto tem finalidade exclusivamente educacional.
+
+Os dados são públicos e não representam operações reais.
